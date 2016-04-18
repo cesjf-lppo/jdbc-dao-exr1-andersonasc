@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,7 +40,7 @@ public class AnuncioDAO {
         try {
             Connection conexao = DriverManager.getConnection("jdbc:derby://localhost:1527/lppo-2016-1", "usuario", "senha");
             Statement operacao = conexao.createStatement();
-            operacao.executeUpdate(String.format("INSERT INTO anuncio(nome, descricao, preco) VALUES('%s','%s',%f)",
+            operacao.executeUpdate(String.format(Locale.US,"INSERT INTO anuncio(nome, descricao, preco) VALUES('%s','%s',%f)",
                     novoAnuncio.getNome(), novoAnuncio.getDescricao(), novoAnuncio.getPreco()));
 
         } catch (SQLException ex) {

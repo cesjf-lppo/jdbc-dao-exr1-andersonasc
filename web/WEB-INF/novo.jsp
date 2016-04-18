@@ -15,7 +15,7 @@
             </div>
             <div>
                 <label>Descrição:
-                    <textarea name="endereco" ></textarea>
+                    <textarea name="descricao" ></textarea>
                 </label>
             </div>
             <div>
