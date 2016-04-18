@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "EstabelecimentoController", 
+@WebServlet(name = "AnuncioController", 
         urlPatterns = {"/listar.html","/novo.html"})
 public class AnuncioController extends HttpServlet {
 
