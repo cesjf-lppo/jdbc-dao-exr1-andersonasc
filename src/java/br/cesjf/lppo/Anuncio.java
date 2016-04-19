@@ -13,4 +13,6 @@ public class Anuncio {
     public void setId(Long id) {
         this.id = id;
     }
+    
+    
 }
